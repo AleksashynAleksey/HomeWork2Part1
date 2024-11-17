@@ -168,7 +168,7 @@ var temperature:Celsius = 20
 
 
 print("Погода вчора:")
-print("Тиск:\(Pressure) hPa")
+print("Тиск:\(pressure) hPa")
 print("Вологість:\(humidity) %")
 print("Температура:\(temperature) C")
 
@@ -215,16 +215,20 @@ print("\nРозділ 1.4 Кортежі\n")
 
  */
 
-print("Прізвище: ")
-print("Вік: ")
-print("Зріст: см")
-print("Вага: кг")
-print("У шлюбі: ")
+var profileInfoUsers = (firstName:userSurname,age:userAge,height:userHeight,weight:userWeight,ismarried:isMarried)
+
+print("Прізвище:\(profileInfoUsers.firstName)")
+print("Вік:\(profileInfoUsers.age)")
+print("Зріст:\(profileInfoUsers.height) см")
+print("Вага:\(profileInfoUsers.weight) кг")
+print("У шлюбі:\(profileInfoUsers.ismarried) ")
+
+var weatherInfo = (humidity, temperature, pressure)
 
 print("\nІнфорація про погоду:")
-print("Тиск: hPa")
-print("Вологість: %")
-print("Температура: C")
+print("Тиск:\(weatherInfo.2) hPa")
+print("Вологість:\(weatherInfo.0) %")
+print("Температура:\(weatherInfo.1) C")
 
 
 print("\nРозділ 1.5 Опціонали\n")
